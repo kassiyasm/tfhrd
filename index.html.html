@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My CV</title>
+    <style>
+        body {
+            font-family: "Times New Roman";
+            background-color: #fff0f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            font-size: 20px;
+            background-color: #f4f4f4;
+            margin: 20px;
+            padding: 20px 100px;
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            padding: 20px;
+            background-color: #ff69b4;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .header img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            margin-right: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .header img:hover {
+            transform: scale(1.05);
+        }
+
+        .a-left {
+            text-align: left;
+        }
+
+        h1, h2 {
+            font-family: "Times New Roman";
+            font-style: italic;
+            color: #ff69b4;
+            transition: color 0.3s ease-in-out;
+        }
+
+        h1:hover, h2:hover {
+            color: #d14791;
+        }
+
+        td, th {
+            padding: 10px;
+            border: 1px solid #ff69b4;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skills-container div {
+            flex: 1;
+            margin: 10px;
+            padding: 15px;
+            background-color: #ffe4e1;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .pink-text {
+            color: #ff69b4;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ff69b4;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #d14791;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="https://sun9-34.userapi.com/impg/fcejTEWljcIFHeQvobnk7w0RZnqX8BXba8nkWQ/82AqEsVQjo4.jpg?size=1844x2160&quality=95&sign=43fc55981f8c41bd0d36894749d0bf43&type=album" alt="Фото">
+        <div class="a-left">
+            <h1>Смагулова Кассия Асхатовна</h1>
+            <p><b class="pink-text">Должность:</b> <span class="pink-text">Кондитер</span></p>
+        </div>
+    </div>
+
+    <div>
+        <h2>О себе</h2>
+        <p>Творческий и трудолюбивый кондитер с опытом работы в ведущих пекарнях. Обожаю экспериментировать с новыми вкусами и техниками, создавая уникальные десерты. Внимательна к деталям и стремлюсь радовать клиентов красивыми и вкусными угощениями.</p>
+    </div>
+
+    <div>
+        <h2>Контактная информация</h2>
+        <ul>
+            <li><b>Email: </b> kassiya.smagulova@narxoz.kz</li>
+            <li><b>Номер: </b> +7(702)647-4870</li>
+            <li><b>Instagram: </b><a href="https://www.instagram.com/kassiiiiya/">kassiiiiya</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Знания и навыки</h2>
+        <div class="skills-container">
+            <div>
+                <p>Приготовление различных видов теста: бисквитного, слоеного, заварного, дрожжевого.</p>
+            </div>
+            <div>
+                <p>Украшение кондитерских изделий: мастика, глазурь, карамельные и шоколадные декорации.</p>
+            </div>
+            <div>
+                <p>Работа с шоколадом: темперирование, создание фигур и конфет.</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Опыт работы</h2>
+        <table>
+            <tr>
+                <th>Компания</th>
+                <th>Должность</th>
+                <th>Период работы</th>
+                <th>Сайт компании</th>
+            </tr>
+            <tr>
+                <td>Lalu cake</td>
+                <td>Помощник шеф-кондитера</td>
+                <td>03.2022-06.2023</td>
+                <td><a href="https://www.instagram.com/la_lu_cake">la_lu_cake</a></td>
+            </tr>
+            <tr>
+                <td>Happy cake</td>
+                <td>Кондитер</td>
+                <td>02.2020-01.2021</td>
+                <td><a href="https://www.instagram.com/happycake.kz">happycake.kz</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
